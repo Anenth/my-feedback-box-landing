@@ -1,0 +1,89 @@
+{
+  "name": "Anenth/my-feedback-box-landing",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "Feedback box",
+  "branch": "",
+  "style": {
+    "name": "Material",
+    "componentSet": {
+      "nav": "nav/DarkAbsoluteNav",
+      "header": "header/GradientHeader",
+      "article": "article/BasicArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "Roboto, sans-serif",
+    "heading": {
+      "fontWeight": 500,
+      "letterSpacing": "-0.01em"
+    },
+    "colors": {
+      "text": "#212121",
+      "background": "#fff",
+      "primary": "#2196f3",
+      "secondary": "#1565c0",
+      "highlight": "#ff4081",
+      "border": "#e0e0e0",
+      "muted": "#f5f5f5"
+    },
+    "layout": {
+      "centered": true,
+      "bannerHeight": "80vh",
+      "maxWidth": 896
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "http://pixyll.com",
+          "text": "Home"
+        },
+        {
+          "href": "https://github.com/Anenth/my-feedback-box-landing",
+          "text": "GitHub"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "my-feedback-box-landing",
+      "subhead": "A simple, beautiful Jekyll theme that's mobile first",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "my-feedback-box-landing: A simple, beautiful Jekyll theme that's mobile first",
+          "url": "http://pixyll.com"
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "Anenth",
+          "repo": "my-feedback-box-landing"
+        }
+      ]
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "<h1>Pixyll</h1>\n<p><a href=\"http://www.pixyll.com\">pixyll.com</a></p>\n<p><img src=\"https://cloud.githubusercontent.com/assets/1424573/3847467/134aa236-1e66-11e4-8421-4e8c122118dc.png\"></p>\n<p>Pixyll is a simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff. It&apos;s mobile <em>first</em>, fluidly responsive, and delightfully lightweight.</p>\n<p>It&apos;s pretty minimal, but leverages large type and drastic contrast to make a statement, on all devices.</p>\n<p>This Jekyll theme was crafted with &lt;3 by <a href=\"http://johnotander.com\">John Otander</a>\n(<a href=\"https://twitter.com/4lpine\">@4lpine</a>).</p>\n<p>&#x4E2D;&#x6587;&#x7248; <a href=\"https://github.com/ee0703/pixyll-zh-cn\">https://github.com/ee0703/pixyll-zh-cn</a>.</p>\n<h2>Getting Started</h2>\n<p>If you&apos;re completely new to Jekyll, I recommend checking out the documentation at <a href=\"http://jekyllrb.com\">http://jekyllrb.com</a> or there&apos;s a tutorial by <a href=\"http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/\">Smashing Magazine</a>.</p>\n<pre><span class=\"hljs-variable\">$ </span>git clone git<span class=\"hljs-variable\">@github</span>.<span class=\"hljs-symbol\">com:</span>johnotander/pixyll.git\n<span class=\"hljs-variable\">$ </span>cd pixyll\n<span class=\"hljs-variable\">$ </span>gem install bundler <span class=\"hljs-comment\"># If you don&apos;t have bundler installed</span>\n<span class=\"hljs-variable\">$ </span>bundle install</pre><h4>Verify your Jekyll version</h4>\n<p>It&apos;s important to also check your version of Jekyll since this project uses Native Sass which\nis <a href=\"http://jekyllrb.com/news/2014/05/06/jekyll-turns-2-0-0/\">only supported by 2.0+</a>.</p>\n<h3>Fork, then clone</h3>\n<p>Fork the repo, and then clone it so you&apos;ve got the code locally.</p>\n<h3>Modify the <code>_config.yml</code></h3>\n<p>The <code>_config.yml</code> located in the root of the Pixyll directory contains all of the configuration details\nfor the Jekyll site. The defaults are:</p>\n<pre><span class=\"hljs-comment\"># Site settings</span>\n<span class=\"hljs-attr\">title:</span> <span class=\"hljs-string\">Pixyll</span>\n<span class=\"hljs-attr\">email:</span> <span class=\"hljs-string\">your_email@example.com</span>\n<span class=\"hljs-attr\">author:</span> <span class=\"hljs-string\">John</span> <span class=\"hljs-string\">Otander</span>\n<span class=\"hljs-attr\">description:</span> <span class=\"hljs-string\">&quot;A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff.&quot;</span>\n<span class=\"hljs-attr\">baseurl:</span> <span class=\"hljs-string\">&quot;&quot;</span>\n<span class=\"hljs-attr\">url:</span> <span class=\"hljs-string\">&quot;http://pixyll.com&quot;</span>\n\n<span class=\"hljs-comment\"># Build settings</span>\n<span class=\"hljs-attr\">markdown:</span> <span class=\"hljs-string\">kramdown</span>\n<span class=\"hljs-attr\">permalink:</span> <span class=\"hljs-string\">pretty</span>\n<span class=\"hljs-attr\">paginate:</span> <span class=\"hljs-number\">3</span></pre><h3>Jekyll Serve</h3>\n<p>Then, start the Jekyll Server. I always like to give the <code>--watch</code> option so it updates the generated HTML when I make changes.</p>\n<pre>$ jekyll serve <span class=\"hljs-comment\">--watch</span></pre><p>Now you can navigate to <code>localhost:4000</code> in your browser to see the site.</p>\n<h3>Using Github Pages</h3>\n<p>You can host your Jekyll site for free with Github Pages. <a href=\"https://pages.github.com/\">Click here</a> for more information.</p>\n<h4>A configuration tweak if you&apos;re using a gh-pages sub-folder</h4>\n<p>In addition to your github-username.github.io repo that maps to the root url, you can serve up sites by using a gh-pages branch for other repos so they&apos;re available at github-username.github.io/repo-name.</p>\n<p>This will require you to modify the <code>_config.yml</code> like so:</p>\n<pre><span class=\"hljs-comment\"># Site settings</span>\n<span class=\"hljs-attr\">title:</span> <span class=\"hljs-string\">Repo</span> <span class=\"hljs-string\">Name</span>\n<span class=\"hljs-attr\">email:</span> <span class=\"hljs-string\">your_email@example.com</span>\n<span class=\"hljs-attr\">author:</span> <span class=\"hljs-string\">John</span> <span class=\"hljs-string\">Otander</span>\n<span class=\"hljs-attr\">description:</span> <span class=\"hljs-string\">&quot;Repo description&quot;</span>\n<span class=\"hljs-attr\">baseurl:</span> <span class=\"hljs-string\">&quot;/repo-name&quot;</span>\n<span class=\"hljs-attr\">url:</span> <span class=\"hljs-string\">&quot;http://github-username.github.io&quot;</span>\n\n<span class=\"hljs-comment\"># Build settings</span>\n<span class=\"hljs-attr\">markdown:</span> <span class=\"hljs-string\">kramdown</span>\n<span class=\"hljs-attr\">permalink:</span> <span class=\"hljs-string\">pretty</span>\n<span class=\"hljs-attr\">paginate:</span> <span class=\"hljs-number\">3</span></pre><p>This will ensure that the the correct relative path is constructed for your assets and posts. Also, in order to run the project locally, you will need to specify the blank string for the baseurl: <code>$ jekyll serve --baseurl &apos;&apos;</code>.</p>\n<h5>If you don&apos;t want the header to link back to the root url</h5>\n<p>You will also need to tweak the header include <code>/{{ site.baseurl }}</code>:</p>\n<pre><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">header</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">&quot;site-header px2 px-responsive&quot;</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">&quot;mt2 wrap&quot;</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">&quot;measure&quot;</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">a</span> <span class=\"hljs-attr\">href</span>=<span class=\"hljs-string\">&quot;{{ site.url }}/{{ site.baseurl }}&quot;</span>&gt;</span>{{ site.title }}<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">a</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">nav</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">&quot;site-nav right&quot;</span>&gt;</span>\n        {% include navigation.html %}\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">nav</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">header</span>&gt;</span></pre><p>A relevant Jekyll Github Issue: <a href=\"https://github.com/jekyll/jekyll/issues/332\">https://github.com/jekyll/jekyll/issues/332</a></p>\n<h3>Contact Form</h3>\n<p>The contact form uses <a href=\"http://formspree.io\">http://formspree.io</a>. It will require you to fill the form out and submit it once, before going live, to confirm your email.</p>\n<p>More setup instructions and advanced options can be found at <a href=\"http://formspree.io/\">http://formspree.io</a></p>\n<h3>Disqus</h3>\n<p>To configure Disqus, set up a <a href=\"https://disqus.com/admin/create/\">Disqus site</a> with the same name as your site. Then, in <code>_config.yml</code>, edit the <code>disqus_shortname</code> value to enable Disqus.</p>\n<h3>Customizing the CSS</h3>\n<p>All variables can be found in the <code>_sass/_variables.scss</code> file, toggle these as you&apos;d like to change the look and feel of Pixyll.</p>\n<h3>Page Animation</h3>\n<p>If you would like to add a <a href=\"http://daneden.github.io/animate.css/\">fade-in-down effect</a>, you can add <code>animated: true</code> to your <code>_config.yml</code>.</p>\n<h3>AnchorJS</h3>\n<p><a href=\"https://github.com/bryanbraun/anchorjs\">AnchorJS</a>: <em>A JavaScript utility for adding deep anchor links to existing page content. AnchorJS is lightweight, accessible, and has no dependencies.</em> You can turn it on by toggling <code>enable_anchorjs</code>. Because it offers many ways for customization, tweaks should be done in <code>_includes/footer.html</code>. Default settings after turning AnchorJS on are:</p>\n<pre><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">script</span>&gt;</span><span class=\"actionscript\">\n    anchors.options.visible = <span class=\"hljs-string\">&apos;always&apos;</span>;\n    anchors.add(<span class=\"hljs-string\">&apos;article h2, article h3, article h4, article h5, article h6&apos;</span>);\n</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">script</span>&gt;</span></pre><p>See <a href=\"http://bryanbraun.github.io/anchorjs/#basic-usage\">documentation</a> for more options.</p>\n<h3>Put in a Pixyll Plug</h3>\n<p>If you want to give credit to the Pixyll theme with a link to <a href=\"http://pixyll.com\">http://pixyll.com</a> or my personal website <a href=\"http://johnotander.com\">http://johnotander.com</a> somewhere, that&apos;d be awesome. No worries if you don&apos;t.</p>\n<h3>Web analytics and search engines</h3>\n<p>You can measure visits to your website either by using <a href=\"https://www.google.com/analytics/\">Google Analytics</a> tracking embed or the more advanced <a href=\"https://www.google.com/analytics/tag-manager/\">Google Tag Manager</a> container.</p>\n<ul>\n<li>For Google Analytics set up the value for <code>google_analytics</code>, it should be something like <code>google_analytics: UA-XXXXXXXX-X</code>.</li>\n<li>For Google Tag Manager set up the value for <code>google_tag_manager</code>, it should be something like: <code>google_tag_manager: GTM-XXXXX</code>.</li>\n<li><em>Do not</em> set both of above methods because this will cause conflicts and skew your reporting data.</li>\n<li>Remember that you need to properly configure the GTM container in its admin panel if you want it to work. More info is available in <a href=\"https://www.google.com/analytics/tag-manager/resources/\">GTM&apos;s docs</a>.</li>\n</ul>\n<p>Your website is, by default, set to be allowed for crawling and indexing by search engines. (Unless you made yourself a custom robots.txt file). You can use front matter settings on each page to control how search engines will it. Sometimes you may want to exclude a particular page from indexing or forbid Google to store a copy of your page in its cache. It is up to you. Use the <code>meta_robots</code> frontmatter key and assign values based on <a href=\"https://developers.google.com/webmasters/control-crawl-index/docs/robots_meta_tag?hl=en#valid-indexing--serving-directives\">this table</a>. Some examples:</p>\n<pre><span class=\"hljs-comment\"># exclude page from index</span>\n<span class=\"hljs-attr\">meta_robots:</span> <span class=\"hljs-string\">noindex</span>\n\n<span class=\"hljs-comment\"># allow indexing, disallow caching</span>\n<span class=\"hljs-attr\">meta_robots:</span> <span class=\"hljs-string\">noarchive</span>\n\n<span class=\"hljs-comment\"># allow indexing, disallow crawling links</span>\n<span class=\"hljs-attr\">meta_robots:</span> <span class=\"hljs-string\">nofollow</span>\n\n<span class=\"hljs-comment\"># disallow indexing, follow links</span>\n<span class=\"hljs-attr\">meta_robots:</span> <span class=\"hljs-string\">noindex,follow</span></pre><p>In order to get more information about your website&apos;s status in search engines, you can register it in <a href=\"https://www.google.com/webmasters/tools/home\">Google Search Console</a> and/or <a href=\"http://www.bing.com/toolbox/webmaster\">Bing Webmaster Tools</a>. Both these tools will ask you to authorize your website with them and there are couple of ways to do that. Pixyll supports verification via meta tags - just fill in values for <code>google_verification</code> and/or <code>bing_verification</code> in <code>_config.yml</code>, the verification strings and meta tags will then be added automatically.</p>\n<p>If search engine optimization is your thing, you can also set up <code>meta_description</code> values for each page/post. By default Pixyll uses <code>summary</code> to populate the <code>&lt;meta name=&quot;description&quot; content=&quot;...&quot;&gt;</code> tag and falls back to <code>description</code> from <code>_config.yml</code> if <code>summary</code> is not present in page/post&apos;s front matter. The <code>summary</code> is also used for generating Open Graph tags. Why would you want to use a dedicated variable for meta description? Because character limit to properly display this description in search results (as a snippet) is way smaller than in Open Graph. It is recommended to keep it at 155-160 characters, for more in-depth info read <a href=\"https://moz.com/blog/i-cant-drive-155-meta-descriptions-in-2015\">this article</a>.</p>\n<p>And lastly - if you happen to write in language other than English be sure to change <code>og_locale</code> in <code>_config.yml</code> to reflect it.</p>\n<h3>Enjoy</h3>\n<p>I hope you enjoy using Pixyll. If you encounter any issues, please feel free to let me know by creating an <a href=\"https://github.com/johnotander/pixyll/issues\">issue</a>. I&apos;d love to help.</p>\n<h2>Upgrading Pixyll</h2>\n<p>Pixyll is always being improved by its users, so sometimes one may need to upgrade.</p>\n<h4>Ensure there&apos;s an upstream remote</h4>\n<p>If <code>git remote -v</code> doesn&apos;t have an upstream listed, you can do the following to add it:</p>\n<pre>git remote <span class=\"hljs-built_in\">add</span> upstream http<span class=\"hljs-variable\">s:</span>//github.<span class=\"hljs-keyword\">com</span>/johnotander/pixyll.git</pre><h4>Pull in the latest changes</h4>\n<pre>git pull upstream <span class=\"hljs-literal\">master</span></pre><p>There may be merge conflicts, so be sure to fix the files that git lists if they occur. That&apos;s it!</p>\n<h2>Thanks to the following</h2>\n<ul>\n<li><a href=\"http://basscss.com\">BASSCSS</a></li>\n<li><a href=\"http://jekyllrb.com\">Jekyll</a></li>\n<li><a href=\"http://refills.bourbon.io/\">Refills</a></li>\n<li><a href=\"http://ethanschoonover.com/solarized\">Solarized</a></li>\n<li><a href=\"http://daneden.github.io/animate.css/\">Animate.css</a></li>\n</ul>\n<h2>Contributing</h2>\n<ol>\n<li>Fork it</li>\n<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>\n<li>Commit your changes (<code>git commit -am &apos;Add some feature&apos;</code>)</li>\n<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>\n<li>Create new Pull Request</li>\n</ol>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/Anenth/my-feedback-box-landing",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/Anenth",
+          "text": "Anenth"
+        }
+      ]
+    }
+  ]
+}
